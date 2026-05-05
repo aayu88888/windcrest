@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windcrest - Your Digital Partner for Stunning Websites</title>
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== HEADER / NAVBAR ===== -->
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="#home">Windcrest</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#plans">Plans</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CURSOR ===== -->
+     <div id="cursor-dot"></div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Crafting Digital Masterpieces for Your Business</h2>
+                <p>Elevate your online presence with a bespoke website tailored for the Indian market. Fast, affordable, and stunning.</p>
+                <a href="#plans" class="btn">Explore Our Plans</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&auto=format&fit=crop" alt="Website Design and Development">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US SECTION ===== -->
+    <section id="about" class="about-us">
+        <div class="container">
+            <h3>Why Choose Windcrest?</h3>
+            <p>At Windcrest, we understand the unique needs of Indian businesses. We combine innovative design with robust technology to deliver websites that not only look great but also drive results. From small businesses to growing enterprises, our solutions are scalable, secure, and designed for success.</p>
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4>Stunning Design</h4>
+                    <p>Modern, responsive, and visually appealing designs that captivate your audience.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Blazing Fast Performance</h4>
+                    <p>Optimized websites that load quickly, providing an excellent user experience.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-headset"></i></div>
+                    <h4>Dedicated Local Support</h4>
+                    <p>Reliable support tailored for the Indian market, ensuring your peace of mind.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PRICING PLANS SECTION ===== -->
+    <section id="plans" class="pricing-plans">
+        <div class="container">
+            <h3>Our Website Plans</h3>
+            <p class="section-description">Choose a plan that fits your vision and budget. All prices in INR.</p>
+            <div class="plans-grid">
+
+                <!-- Basic Plan -->
+                <div class="plan-card basic">
+                    <h4>Basic Plan</h4>
+                    <p class="price">₹ 5,000<span>/one-time</span></p>
+                    <ul>
+                        <li>Single Page Website</li>
+                        <li>Responsive Design</li>
+                        <li>Essential SEO Setup</li>
+                        <li>Contact Form Integration</li>
+                        <li>1 Month Free Support</li>
+                        <li class="unavailable">Advanced Features</li>
+                        <li class="unavailable">E-commerce Functionality</li>
+                    </ul>
+                    <button class="btn btn-select">Select Basic Plan</button>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="plan-card pro">
+                    <h4>Pro Plan</h4>
+                    <p class="price">₹ 10,000<span>/one-time</span></p>
+                    <ul>
+                        <li>Up to 5 Pages</li>
+                        <li>Custom Design</li>
+                        <li>Advanced SEO Optimization</li>
+                        <li>Social Media Integration</li>
+                        <li>Blog Setup</li>
+                        <li>3 Months Free Support</li>
+                        <li class="unavailable">E-commerce Functionality</li>
+                    </ul>
+                    <button class="btn btn-select">Select Pro Plan</button>
+                </div>
+
+                <!-- Pro Max Plan -->
+                <div class="plan-card pro-max">
+                    <h4>Pro Max Plan</h4>
+                    <p class="price">₹ 20,000<span>/one-time</span></p>
+                    <ul>
+                        <li>Unlimited Pages</li>
+                        <li>Premium Custom Design</li>
+                        <li>Full SEO Strategy & Analytics</li>
+                        <li>E-commerce Integration (Basic)</li>
+                        <li>Payment Gateway Setup</li>
+                        <li>6 Months Priority Support</li>
+                        <li>Content Management System</li>
+                    </ul>
+                    <button class="btn btn-select">Select Pro Max Plan</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <h3>Get in Touch</h3>
+            <p class="section-description">Have questions or ready to start your project? Send us a message!</p>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="plan-interest">Interested Plan</label>
+                    <select id="plan-interest" name="plan-interest">
+                        <option value="">Select a Plan</option>
+                        <option value="basic">Basic Plan (₹ 5,000)</option>
+                        <option value="pro">Pro Plan (₹ 10,000)</option>
+                        <option value="pro-max">Pro Max Plan (₹ 20,000)</option>
+                        <option value="other">Other / Custom</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Windcrest. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
