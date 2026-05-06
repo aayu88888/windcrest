@@ -9,6 +9,16 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // ===============================================================
+    // 0. AOS INITIALIZATION
+    // ===============================================================
+    AOS.init({
+        duration: 800,       // animation speed 
+        easing: 'ease-in-out',
+        once: true,          // animate only once when scrolled into view
+        offset: 80,          // trigger 80px before element enters screen
+    });
+
     // ============================================================
     // 1. SMOOTH SCROLLING
     // Intercepts nav link clicks and smoothly scrolls to sections
