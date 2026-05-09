@@ -20,9 +20,12 @@
    1. CSS VARIABLES (ROOT)
    ============================================================ */
 :root {
-    --primary-color: #007bff;       /* Blue */
-    --secondary-color: #6c757d;     /* Grey */
-    --accent-color: #28a745;        /* Green */
+    --primary-color: #007bff;
+    /* Blue */
+    --secondary-color: #6c757d;
+    /* Grey */
+    --accent-color: #28a745;
+    /* Green */
     --light-bg: #f8f9fa;
     --dark-bg: #343a40;
     --text-color: #333;
@@ -73,7 +76,7 @@ body {
 /* ===========================================================
    CURSOR
    =========================================================== */
-   /* #cursor-dot {
+/* #cursor-dot {
   position: fixed;
   width: 10px;
   height: 10px;
@@ -309,7 +312,8 @@ section h3 {
 
 .plans-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    /* ← change from auto-fit */
     gap: 30px;
     margin-top: 50px;
 }
@@ -328,9 +332,17 @@ section h3 {
 }
 
 /* Individual plan accent colors */
-.plan-card.basic    { border-top-color: #007bff; }
-.plan-card.pro      { border-top-color: #ffc107; }
-.plan-card.pro-max  { border-top-color: #dc3545; }
+.plan-card.basic {
+    border-top-color: #007bff;
+}
+
+.plan-card.pro {
+    border-top-color: #ffc107;
+}
+
+.plan-card.pro-max {
+    border-top-color: #dc3545;
+}
 
 .plan-card:hover {
     transform: translateY(-10px);
@@ -362,6 +374,10 @@ section h3 {
     text-align: left;
     margin-bottom: 30px;
     width: 100%;
+    display: flex;
+    /* ← add */
+    flex-direction: column;
+    /* ← add: stacks each feature vertically */
 }
 
 .plan-card ul li {
@@ -495,17 +511,25 @@ footer .container {
         flex-direction: column;
         text-align: center;
     }
+
     .hero-content {
         max-width: 100%;
     }
+
     .hero-content h2 {
         font-size: 2.8rem;
     }
+
     .hero-content p {
         font-size: 1.1rem;
     }
+
     .hero-image {
         margin-top: 40px;
+    }
+
+    .plans-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -515,44 +539,54 @@ footer .container {
         flex-direction: column;
         align-items: center;
     }
+
     nav ul {
         margin-top: 12px;
         padding-bottom: 8px;
-        display: flex;            
-        flex-direction: row;      
-        flex-wrap: wrap;          
-        justify-content: center;  
-        gap: 4px;     
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
     }
+
     nav ul li {
-        display:inline-block;
-        margin: 0 ;
+        display: inline-block;
+        margin: 0;
         padding: 0;
     }
+
     nav ul li a {
         display: block;
         padding: 6px 12px;
         border-radius: 5px;
         font-size: 0.9rem;
     }
+
     nav ul li a:hover {
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255, 255, 255, 0.1);
     }
+
     section {
         padding: 60px 0;
     }
+
     section h2 {
         font-size: 2.2rem;
     }
+
     section h3 {
         font-size: 1.8rem;
     }
+
     .plans-grid {
         grid-template-columns: 1fr;
     }
+
     .feature-item {
         padding: 25px;
     }
+
     .contact-form {
         padding: 30px;
     }
@@ -563,22 +597,28 @@ footer .container {
     .logo {
         font-size: 1.5rem;
     }
+
     nav ul li {
         margin: 0 5px;
     }
+
     .hero-content h2 {
         font-size: 2rem;
     }
+
     .hero-content p {
         font-size: 1rem;
     }
+
     .btn {
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+
     .plan-card .price {
         font-size: 2.2rem;
     }
+
     footer .footer-links a {
         margin: 0 8px;
     }
